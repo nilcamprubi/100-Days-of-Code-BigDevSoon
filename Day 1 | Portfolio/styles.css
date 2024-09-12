@@ -1,0 +1,128 @@
+* {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  body {
+    background-color: #9cf3ff;
+    display: flex;
+    justify-content: center; /*centers horizontally*/
+    align-items: center; /*centers vertically*/
+    height: 100vh;
+  }
+
+  div {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    margin: 0px 40px 0px 40px;
+    border-radius: 50px;
+    width: 100%;
+    justify-content: center;
+    column-gap: 30px;
+  }
+
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+    background-color: #fdfdfd;
+    min-height: 520px;
+    max-width: 350px;
+    margin: 5vh;
+    border-radius: 40px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    background-image: url("/images/profile-background.png");
+    background-size: cover;
+    background-position-y: -157px;
+    background-repeat: no-repeat;
+  }
+  
+  .profile {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%; /*to match that of the parent's*/
+  }
+
+  .profile-img {
+    width: 130px;
+    height: 130px;
+    padding-top: 0px;
+    border-radius: 400px; /* Makes the image circular */
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5); /* Adds the shadow */
+  }
+
+  .profile-img:hover {
+    scale: 1.025;
+    transition-duration: 0.5s;
+  }
+
+  .handle {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: larger;
+    font-weight: 700;
+}
+
+  .handle p{
+    font-size: small;
+    color: #726f6f;
+  }
+
+  .description p {
+    padding: 20px 50px;
+    text-align: justify;
+  }
+
+  img {
+    padding-top: 20px;
+    width: 40px;
+    height: auto;
+    transition: all;
+  }
+
+  img:hover {
+    scale: 1.1;
+    transition-duration: 1s;
+  }
+
+  .buttons {
+    column-gap: 60px;
+  }
+
+  button {
+    border-radius: 50px;
+    width: 80px;
+    height: 33px;
+    transition: all;
+  }
+
+  .follow-btn {
+    background-color: #215cfc;
+    color:#fdfdfd;
+    border: 2px solid #215cfc;
+  }
+
+  .follow-btn:hover {
+    background-color: #fdfdfd;
+    color: #215cfc;
+    border: 2px solid #215cfc;
+    transition-duration: 0.3s;
+  }
+
+  .message-btn {
+    background-color: #fdfdfd;
+    color: #726f6f;
+    border: 1px solid #726f6f;
+  }
+
+  .message-btn:hover {
+    background-color: #726f6f;
+    color: #fdfdfd;
+    border: none;
+    transition-duration: 0.3s;
+  }
+  
