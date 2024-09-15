@@ -1,0 +1,145 @@
+/* Add your CSS here. Utilize Tailwind classes or write custom styles to bring your unique design to life. */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(230, 231, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    /* your styles here */
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    width: 300px;
+    height: 500px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* x offset, y offset, blur radius, colour */
+}
+
+.profile {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 5% 10% 5% 15px;
+}
+
+.profile img {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* x offset, y offset, blur radius, colour */
+}
+
+.profile div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+h1, h2 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+h1 {
+    font-size: small;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: x-small;
+}
+
+.upper-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin: 15px;
+    row-gap: 10px;
+}
+
+.section {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    column-gap: 7px;
+}
+
+.section img {
+    width: 25px;
+    padding: 4px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.194);
+    border-radius: 20%;
+}
+
+.right-arrow {
+    margin-left: auto;
+}
+
+.right-arrow img {
+    background-color: rgba(0, 0, 0, 0);
+    height: 20px;
+    width: auto;
+    transition: all;
+}
+
+.right-arrow img:hover {
+    box-shadow: 0 0 5px #0000004d;
+    border-radius: 50%;
+    transition-duration: 0.75s;
+}
+
+.lower-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin: 15px;
+    row-gap: 10px;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+    margin-top: auto;
+    margin-bottom: 30px;
+}
+
+.nav img {
+    width: 30px;
+    height: auto;
+    transition: all;
+    padding: 5px;
+
+}
+
+.nav #active {
+    background-color: rgba(0, 0, 0, 0.194);
+    border-radius: 20%;
+}
+
+.nav #active:hover {
+    background-color: rgba(0, 0, 0, 0.301);
+    border-radius: 20%;
+}
+
+.nav img:hover {
+    background-color: rgba(0, 0, 0, 0.194);
+    border-radius: 20%;
+    transition-duration: 0.5s;
+}
+
+hr {
+    margin: 0 15px;
+}
