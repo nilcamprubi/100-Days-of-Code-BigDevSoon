@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <!-- Our unique tag to identify the solution -->
+    <bds />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BigDevSoon Challenge</title>
+
+    <!-- TailwindCSS for styling. Feel free to integrate other libraries as needed -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Add your external script links here, if any -->
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="contact">
+        <div class="text">
+          <h1>Contact Us</h1>
+          <p>Get in touch with us! Whether you have questions, feedback, or just want to say hello, we're here for you.</p>
+          <br>
+        </div>
+        <div class="pinpoint">
+          <address>
+            Windler, Lockman and McClure<br>
+            3629 N Cole Rd, Boise, Illinois<br>
+          </address>
+        </div>
+      </div>
+      <div class="form">
+        <h2>Send us a Message</h2>
+        <form action="mailto:nilcamprubivilademunt@gmail.com" method="POST">
+      
+          <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+          
+          <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+          
+          <input type="tel" id="phone" name="phone" placeholder="Phone"><br><br>
+          
+          <div class="comm-text">
+            <label for="communication-method">Preferred contact method of communication</label><br>
+          </div>
+          <div class="radio">
+            <input type="radio" id="email" name="gender" value="male">
+            <label for="email">Email</label><br>
+            <input type="radio" id="pone" name="gender" value="female">
+            <label for="phone">Phone</label><br><br>  
+          </div>
+        
+          <textarea id="message" name="message" rows="4" cols="50" placeholder="Message"></textarea><br><br>
+          
+          <div class="submit">
+            <input type="submit" value="Submit">   
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

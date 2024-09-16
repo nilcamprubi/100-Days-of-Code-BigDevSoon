@@ -1,0 +1,124 @@
+/* Add your CSS here. Utilize Tailwind classes or write custom styles to bring your unique design to life. */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url("./images/map.jpeg");
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:start;
+    margin: 20vh;
+    column-gap: 10%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+h1, h2, p, address {
+    color: #ffffff;
+    text-shadow: 0 0 5px #000000;
+}
+
+h1 {
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+p {
+    font-weight: 200;
+}
+
+.pinpoint {
+    display: flex;
+}
+
+address {
+    position: relative;
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+address::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: 80px;
+    border-width: 25px;
+    border-style: solid;
+    border-color: #ee5656 transparent transparent transparent;
+    
+}
+
+.form h2 {
+    color: #000000;
+    text-shadow: none;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+input {
+    border: 1px solid #00000029;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 13px;
+    margin: -8px 0;
+}
+
+.radio {
+    display: flex;
+    flex-direction: row;
+}
+
+.radio input {
+    margin-right: 5px;
+    margin-top: 3px;
+    background-color: #000000;
+    outline-color: #000000;
+}
+
+label {
+    margin-right: 25px;
+    color: #0000009a;
+    font-weight: 500;
+    font-size: small;
+}
+
+textarea {
+    border: 1px solid #00000029;
+    border-radius: 10px;
+    padding: 2px 5px;
+    font-size: small;
+}
+
+.submit input {
+    width: 100%;
+    background-color: #8be59f;
+    color: #ffffff;
+    text-shadow: 0 0 0.5px #000000;
+    border-radius: 20px;
+    transition: all;
+    border: none;
+}
+
+.submit input:hover {
+    transition-duration: 0.5s;
+    background-color: #000000;
+    color: #ffffff;
+}
