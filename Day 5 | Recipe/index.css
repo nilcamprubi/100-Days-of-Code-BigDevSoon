@@ -1,0 +1,175 @@
+/* Add your CSS here. Utilize Tailwind classes or write custom styles to bring your unique design to life. */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/* Basic website structure */
+.website {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .left, .right {
+    width: 25%;
+    position: relative; /* ensure that the children respect the parent position */
+  }
+
+  /* Left section */
+  .left {
+    display: flex;
+    flex-direction: column-reverse;
+    background-image: url("./images/food.jpg");
+    background-size:cover;
+    width: 40%;
+  }
+
+  .left h2 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    width:fit-content;
+    background-color: #000000;
+    padding: 15px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-right: 15px;
+  }
+  
+  /* Right section layout */
+  .right {
+    display: flex;
+    flex-direction: column;
+    height:fit-content;
+    width: 50%;
+    gap: 20px; /* Adds space between each block */
+    top: 23%;
+    margin: 0 0 0 40px;
+    font-size: 12px;
+    color: #0000008c;
+  }
+
+  .overlap {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 60%;
+    position: absolute;
+    top: 15%; /* adjust as needed */
+    left: 65%; /* adjust as needed */
+    transform: translate(-50%, -50%); /* center the overlap div */
+    z-index: 10; /* ensures it stays in front */
+    background-color: #ffffff;
+    padding: 15px 25px;
+    font-size: 14px;
+  }
+  
+  /* Star rating section */
+  .star-rating {
+    display: flex;
+    align-items: center;
+  }
+
+  .star-rating .checked {
+    color: #ffc800;
+    -webkit-text-stroke: 0px; /* Creates a border around the star shape */
+
+  }
+
+  .star-rating span {
+    color: #ffffff;
+    -webkit-text-stroke: 1.5px #ffc800; /* Creates a border around the star shape */
+    scale: 0.9;
+  }
+
+  .star-rating p {
+    margin-left: 8px;
+  }
+  
+  /* Time, level, budget row */
+  .time-budget-level {
+    display: flex;
+    justify-content: left;
+    column-gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .item i {
+    margin-right: 8px;
+    scale: 1.3;
+  }
+  
+  .item div {
+    text-align: left;
+  }
+  
+  .item h3 {
+    font-size: 9px;
+    font-weight: bold;
+  }
+  
+  .item p {
+    font-size: 9px;
+    color: #ffc800;
+    font-weight: 600;
+    row-gap: 10px;
+  }
+  
+  /* Ingredients and Instructions */
+  .right h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+
+  .checkbox {
+    display: flex;
+    margin-bottom: 3px;
+  }
+  
+  /* Ingredients list */
+  input[type="checkbox"] {
+    margin-right: 5px;
+    color: #ffc800;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Style the checkbox when checked */
+  input[type="checkbox"]:checked {
+      background-color: #ffc800;
+      border-color: #ffc800;
+  }
+
+  /* Create a custom checkmark when checked */
+  input[type="checkbox"]:checked::before {
+      content: "\2714"; /* Checkmark symbol */
+      color: white;
+      font-weight: bold;
+      font-size: 12px;
+      position: absolute;
+      left: 1px;
+      top: -2px;
+  }
+
+  /* Instructions list */
+  ol li {
+    margin-bottom: 8px;
+    margin-left: 14px;
+  }
