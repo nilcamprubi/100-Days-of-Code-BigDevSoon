@@ -1,0 +1,62 @@
+/* Add your CSS here. Utilize Tailwind classes or write custom styles to bring your unique design to life. */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #000000;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-image {
+    height: 80vh;
+}
+
+.main-image img {
+    height: 100%;
+    padding: 70px ;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.carousel-items {
+    display: flex;
+    padding: 0 15px;
+    transition: transform 1.5s ease-in;
+}
+
+.carousel-items img {
+    height: 20vh;
+    width: 25vh;
+    padding: 10px 5px 10px 10px;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  button.prev {
+    left: 10px;
+  }
+  
+  button.next {
+    right: 10px;
+  }
